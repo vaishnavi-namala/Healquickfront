@@ -1,0 +1,259 @@
+.head{
+    position: relative;
+}.Bookbanner,.BlogBanner,.contactBanner,.treatBanner{
+    width:100%;
+    height:25vh;
+    background-repeat:no-repeat;
+    
+    background-position: center;
+}
+.Bookbanner{
+     background-image:url(../Assets/booking.jpg);
+     background-size:100% 100%;
+}
+.BlogBanner{
+    background-image:url(../Assets/Blogs.png);
+    background-size:100% 100%;
+}
+.contactBanner{
+    background-image:url(../Assets/contactBanner.png);
+    background-size:cover;
+}
+.treatBanner{
+    background-image:url(../Assets/TreatBanner.png);
+    background-size:cover;
+    background-position: bottom;
+}
+.title{
+    padding:45px;
+}
+.title h1{
+   color:#083758ff;
+    text-shadow: 1px 1px 0px rgba(16, 14, 14, 0.995);
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.title a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #083758ff;
+
+}
+.title li{
+    color:rgb(96, 95, 95);
+    text-shadow: 1px 1px 1px rgb(96, 95, 95);
+    font-size: 20px;
+    font-weight: 500;
+}
+.title a:hover{
+    color:rgb(96, 95, 95);
+    font-size: 20px;
+    font-weight: 500;;
+}
+.title::before{
+    width:15px;
+    height:120px;
+    content: "";
+    position: absolute;
+    box-shadow: 1px 1px 1px #083758ff;
+    background-color: rgb(144, 144, 143);
+    top:40px;
+    left:20px;
+}
+
+.sect{
+    padding: 60px ;
+}
+.sect form{
+    padding: 60px;
+    background-color: #cccccc4a;
+    width:50%;
+    margin:auto;
+}
+.sect input,.sect textarea,.sect select,.contact input,.contact textarea {
+    background-color: transparent;
+    border: 1px solid #cbc9c9e6;
+    color: rgba(21, 21, 21, 0.99);
+    text-shadow: 0.5px 0.5px 0px rgb(199, 195, 195);
+    font-size: 18px;
+    font-weight: 500;
+}
+.sect select option{
+    color:black;
+}
+.sect ::placeholder{
+    color: #cbc9c9e6 ;
+    font-size: 18px;
+    font-weight: 300;
+}
+.Blogs{
+    background: linear-gradient(45deg,
+     rgb(227, 241, 247),
+        rgba(38, 106, 98, 0.215),
+        rgba(38, 106, 98, 0.352),
+         rgba(38, 106, 98, 0.32),
+      #266a6233 ,
+       #fff);
+    padding:30px;
+}
+.BlogMain{
+    padding: 10px 20px;
+    margin-bottom:20px;
+  box-shadow: 0 0 10px rgb(49, 116, 112,.5);
+   border-radius: 10px;
+   background-color:#fff;
+}
+.BlogMain h1{
+    letter-spacing: 0px;
+    font-size: 36px;
+    color:rgb(11, 70, 112);
+  text-shadow: 1px 1px 1px rgba(9, 9, 9, 0.997);
+}
+.BlogMain p{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.blogImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; 
+  padding: 0;
+  border-right: 1px solid rgb(125, 125, 125);
+  border-radius: 10px;
+}
+.BlogContent{
+    padding: 0px 10px;
+   
+}
+.BlogSuggest div{
+   box-shadow:0 0 10px rgb(49, 116, 112,.5);
+    border-radius: 6px ;
+    background-color:#fff;
+  padding: 10px 20px;
+  height: 100%;
+ 
+  
+}
+.BlogSuggest li{
+    padding: 0%;
+   
+    list-style:none;
+}
+.BlogSuggest h3{
+     line-height: 40px;
+    font-size: 20px;
+}
+
+.contact{
+    padding: 50px;
+    
+
+}
+.contact form,.contact2{
+   background-color:#cde9f45d;
+   box-shadow: 1px 1px 3px rgb(54, 54, 54);
+}
+.contact2{
+    padding: 40px;
+}
+.contact2 h1{
+    line-height:70px ;
+}
+.contact2 p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.contact2 i{
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 50%;
+}
+.container{
+  padding:40px 0px;
+  gap:20px;
+  display: flex;
+  flex-wrap:wrap;
+}
+.container a{
+    text-align: center;
+    width:calc(33% - 20px);
+    border:1px solid black;
+    padding:10px;
+    border-radius: 60px;
+    background:rgba(10, 30, 70, 0.7); 
+  background-image: linear-gradient(135deg, rgba(10, 30, 70, 0.7), rgba(5, 15, 35, 0.8));
+
+}
+.container h1{
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.Doctorcard{
+    border:1px solid black;
+    padding: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+.Doctorcard h4{
+    font-size:20px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-bottom: 25px;
+}
+.Doctorcard  p{
+    font-size: 16px;
+    line-height: 16px;
+}
+.Doctorcard .center p{
+    text-align: center;
+    font-size:16px;
+    font-weight:100px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 10px 10px 0px 10px;
+}
+.Doctorcard .end{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.Doctorcard .end div{
+    width:75%;
+    text-align: end;
+}
+.Doctorcard .end div h5{
+    margin-bottom: 30px;
+}
+.Doctorcard a{
+    border:1px solid black;
+  background-color: rgb(197, 161, 43);
+  color: #333;
+  text-decoration: none;
+  padding: 15px 20px 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn{
+    border: none;
+    background: linear-gradient(
+      to bottom,
+      #00faff,
+      #022731,
+      rgba(7, 62, 90, 0.947),
+      #5aefe7
+  );
+  margin: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.4);
+  filter: brightness(1.15) contrast(1.1);
+}

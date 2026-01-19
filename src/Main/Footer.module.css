@@ -1,0 +1,88 @@
+.limited li:nth-child(n+4){
+    display: none;
+}
+.foot{
+    background-color:rgb(164, 189, 188);
+    
+}
+
+.brandName{
+  
+  font-weight: 600;
+  font-size: 40px;
+  color: #083758ff;
+  line-height: 35px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 5px rgba(0,0,0,0.5);
+  margin: 5px 0px;
+ 
+}
+.about{
+    border-right:0.5px solid black;
+}
+
+.about p{
+     font-size: 18px;
+     padding: 5px;
+     word-spacing: 6px;
+     letter-spacing: 1px;
+
+}
+.links{
+    padding: 60px;
+
+}
+.links h3{
+    color: rgb(12, 75, 120) ;
+    text-shadow: 1px 1px 0px rgba(18, 17, 17, 0.714);
+    text-align: start;
+    font-size: 36px;
+    font-weight: 500;
+}
+.links ul{
+    list-style:none;
+    padding: 0px!important;
+}
+.links p{
+    font-size:16px
+}
+.treats{
+    
+    color:rgba(247, 236, 42, 0.768);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 1px 1px 0px rgb(70, 69, 69);
+}
+.treats:hover{
+    color: #000;
+    text-shadow: 1px 1px 0px white;
+}
+.cp{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px 0px 40px;
+    background-color:#083758ff;
+    color: #fff;
+    text-shadow:1px 1px 0px #000;
+}
+
+@media(max-width:1020px){
+    .about{
+        border:none;
+    }
+    .links{
+        padding: 0px
+    }
+    .links h3{
+        font-size: 20px;
+    }
+    .links p,.links li{
+        font-size: 12px
+    }
+    .links a{
+        font-size: 18px
+    }
+    .cp{
+        font-size: 8px;
+    }
+}

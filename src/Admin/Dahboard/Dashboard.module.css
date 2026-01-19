@@ -1,0 +1,159 @@
+.con{
+    height:10vh;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding:20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.148);
+}
+.dashboardcontainer{
+    height:100vh
+} 
+.aside aside{    
+   border-right: 1px solid rgba(0, 0, 0, 0.186);
+    height:100vh;
+     
+}
+.aside h3{
+    font-weight: 700;
+  font-size: 32px;
+  color:#083758ff;
+  line-height: 35px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 5px rgba(0,0,0,0.5);
+  margin: 5px 0px;
+  
+}
+
+.footer{
+    height:5vh;
+    text-align: center;    
+}
+.form{
+    width:100%;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.treat{
+    width:100%;
+    padding: 20px ;
+    height:85vh;
+    overflow-y:scroll;   
+}
+.location{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.location div{
+    border: 1px solid black;
+    flex: 0 1 calc(20% - 10px);
+    min-width:150px;
+    position: relative;
+    text-align: center;
+    padding:3px ;
+    border-radius: 60px;
+    background:rgba(3, 40, 116, 0.7); 
+  background-image: linear-gradient(135deg, rgba(15, 53, 128, 0.7), rgba(5, 15, 35, 0.8));
+}
+.location div p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+}
+.location div:hover button{
+    opacity: 1;
+}
+.location button{
+    position: absolute;
+    top:1px;
+    right:5px;
+    z-index:1;
+    background-color: transparent;
+    border: none;
+    opacity: 0.1;
+    color: red;
+    font-size:  1.5em;
+
+}
+.treatcontainer{
+display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.treatcard{
+flex:1 1 calc(25% - 25px);
+  min-width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.393);
+  position: relative;
+}
+.treatcard:hover .butt{
+    opacity: 1;
+}
+.treatcard div{
+    padding:5px;
+}
+.treatImg{
+width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.Doctorcard{
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+.Doctorcard:hover .butt{
+    opacity: 1;
+}
+.center{
+    letter-spacing: 1px;
+}
+
+
+.companyCard{
+    position: relative;
+    box-shadow: 1PX 2PX 10PX rgb(86, 85, 85);
+    height:180px
+
+}
+.companyCard:hover .butt{
+    opacity: 1;
+    
+}
+.butt{
+    background-color: transparent;
+    border: none;
+    opacity: 0.1;
+    position: absolute;
+    top:1px;
+    right: 1px;
+    z-index: 1;
+    color: red;
+    font-size:  1.5em;
+}
+.td{
+    height:10vh
+}
+.BlogMain{
+    position: relative;
+}
+.BlogMain:hover .butt{
+    opacity: 1;
+}
+.edit{
+    border:none;
+    background-color: white;
+    box-shadow:1px 1px 2px rgb(121, 117, 117);
+    margin:1px;
+}
+@media(max-width:1020px){
+    .aside h3{
+        font-size: 19px;
+    }
+}
