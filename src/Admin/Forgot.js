@@ -21,7 +21,7 @@ const Forgot = () =>{
       axios.post("https://healquickbackend-1.onrender.com/reset",{email:email,mobile:mobile})
       .then((res)=>{
         if(res.data==="does not exist"){
-      throw new Error("does not exist")};
+      throw new Error("does not exist")}
         else{navigate(`/reset/${email}`)}
       })
       .catch(err=>{
