@@ -12,7 +12,7 @@ const AssociateHospitals = () => {
   const submithandler=(e)=>{
     e.preventDefault()
   const imgFileErr=document.getElementById("imgFileErr")
-    if(imgfile.length == 0){
+    if(imgfile.length === 0){
       imgFileErr.textContent='Upload atleast 1 file'
     }
     else if(imgfile.length>5){
