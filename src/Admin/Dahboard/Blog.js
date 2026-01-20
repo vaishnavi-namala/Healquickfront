@@ -30,7 +30,8 @@ const Blog = () => {
     formdata.append("blog_description",blog_description)
     axios.post('https://healquickbackend-1.onrender.com/blog',formdata,{headers:{"Content-Type": "multipart/form-data"}})
     .then(res=>{
-      if(res.data==="couldnt post data") throw "couldnt post data"
+      if(res.data==="couldnt post data"){
+      throw new Error("couldn't post data")};
       alert(res.data);
       setBlog({...blog,blog_title:'',blog_description:''})
       fileRef.current.value=null
