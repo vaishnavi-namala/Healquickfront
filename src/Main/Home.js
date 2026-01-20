@@ -119,7 +119,7 @@ const Home = () => {
                         return (
                             <div key={index} className={`col-lg-3 col-md-4 col-6 mb-3 `}>
                               <div className={dashboard.companyCard}>
-                                <img src={`https://healquickbackend-1.onrender.com/${i}`} className={`w-100 h-100  `} />
+                                <img src={`https://healquickbackend-1.onrender.com/${i}`} alt='' className={`w-100 h-100  `} />
                                 </div>
                             </div>
                             )     
