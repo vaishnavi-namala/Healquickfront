@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import Book from './Book.module.css'
 import { Link, useLocation, useParams } from 'react-router'
 import {GetApi} from '../CallApi'
-import Treatments from './Treatments'
-import axios from 'axios'
 import { validateForm } from '../ValidateForm'
 
 const BookAppointmnet = () => {
@@ -14,7 +12,6 @@ const BookAppointmnet = () => {
   const [doctorName,setdoctorName]=useState(doctorName1||'')
   const [patient,setpatient]=useState({patientName:'',patient_mobileNo:'',patient_mail:'',patient_Message:''})
   const treatments=allLocation.map(doc=>{return doc.treatName})
-  //const filteredLocations = treatName? allLocation.find((t) => t.treatName === treatName)?.locations:[]
   const filteredLocations = treatName? allLocation.find((t) => t.treatName === treatName)?.locations||[]:[]
   const changedata=(e)=>{
     setpatient({...patient,[e.target.name]:e.target.value})}
