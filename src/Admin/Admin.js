@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import login_img from '../Assets/Log.png'
+import {Row } from 'react-bootstrap'
 import axios from 'axios'
 import admin from './admin.module.css'
-import { Container, Row } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router'
 import { useContext } from 'react'
 import { RoutProtect } from '../App'
@@ -53,9 +53,9 @@ const Admin = () => {
                 <form  className='mb-5 '>
                     <h1 className={`mb-3 ${admin.pr}`}><i className="bi bi-person"></i></h1>
                     <div className=' p-3 mb-3'>
-                    <input type='text' name='email' placeholder='Email id' value={`${data.email}`} onChange={changedata}  className='form-control'/>
+                    <input type='text' name='email' placeholder='Email id' value={email} onChange={changedata}  className='form-control'/>
                     <pre id='mailerr' className='mb-2'>  </pre>
-                    <input type='password' name='password' placeholder='Password' value={`${data.password}`} onChange={changedata} className='form-control'/>
+                    <input type='password' name='password' placeholder='Password' value={password} onChange={changedata} className='form-control'/>
                     <pre id='passworderr' className='mb-2'>  </pre>
                     <button className='btn btn-lg form-control mb-3'  onClick={submithandler}>Login</button>
                     
