@@ -3,7 +3,6 @@ import { useContext } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router'
 import { RoutProtect } from '../../App'
 import { useEffect } from 'react'
-import { useState } from 'react'
 import axios from 'axios'
 import dashboard from './Dashboard.module.css'
 import Header from './Header'
@@ -22,7 +21,7 @@ const Dashboard = () => {
       .catch(err=>{
         alert(err)
       })
-    },[token])
+    },[token,navigate])
     
     
    
