@@ -38,7 +38,7 @@ const AddTreatment = () => {
       fileref.current.value=null
       
     })
-    .catch(err=>{alert(err)})
+    .catch(err=>{alert(err.message)})
   }
   }
   return (
