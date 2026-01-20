@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { GetApi} from '../CallApi'
 import Treat from './Treat.module.css'
 import { Link } from 'react-router'
@@ -27,7 +27,7 @@ const Treatments = () => {
           {Treatment.map((treat,index)=>{
             return(
               <Link to={`/location/${treat.treatName}` } className={`nav-link ${Treat.blogC}`}>
-                <img src={`https://healquickbackend-1.onrender.com${treat.image}`} alt="image" className={Treat.blogImg}/>
+                <img src={`https://healquickbackend-1.onrender.com${treat.image}`} alt="" className={Treat.blogImg}/>
                 <div className={`${Treat.blogContent}`}>
                   <h3>{treat.treatName}</h3>
                   <p>{treat.description}</p>
