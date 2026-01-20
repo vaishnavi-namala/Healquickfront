@@ -1,7 +1,5 @@
 import React from 'react'
 import Dashborad from './Dashboard.module.css'
-import { useState } from 'react'
-import axios from 'axios'
 import {DeleteApi, GetApi} from '../../CallApi'
 
 const DElocation = () => {
