@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {GetApi} from '../CallApi'
 import Book from './Book.module.css'
 import { Link } from 'react-router'
