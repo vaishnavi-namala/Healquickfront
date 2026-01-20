@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, {useState } from 'react'
 import { Row } from 'react-bootstrap'
 import admin from './admin.module.css'
 import axios from 'axios'
@@ -26,7 +26,7 @@ const CreateAccount = () => {
         if(!err()){
             axios.post("https://healquickbackend-1.onrender.com/register",{fname:fname,lname:lname,password:password,email:email,mobile:mobile,description:description})
             .then((res)=>{
-                if(res.data=='Already account exists through this mailId'||res.data=='Already registered through this mobile number'||res.data=='please change the password'){
+                if(res.data==='Already account exists through this mailId'||res.data==='Already registered through this mobile number'||res.data==='please change the password'){
                     throw res.data}
                else{
                 alert(res.data)
@@ -35,11 +35,11 @@ const CreateAccount = () => {
                 }            
             })
             .catch((err)=>{
-                if(err=='Already account exists through this mailId'){
+                if(err==='Already account exists through this mailId'){
                     document.getElementById("emailError").textContent='Already account exists through this mailId'
-                }else if(err=='Already registered through this mobile number'){
+                }else if(err==='Already registered through this mobile number'){
                  document.getElementById("mobileError").textContent='Already registered through this mobile number'
-                }else if(err=='please change the password'){
+                }else if(err==='please change the password'){
                     document.getElementById("passwordERR").textContent='please change the password'
                 }else{
                     alert(err)
