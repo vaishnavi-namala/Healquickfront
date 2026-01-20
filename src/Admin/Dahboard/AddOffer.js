@@ -2,7 +2,6 @@ import React from 'react'
 import Dashboard from './Dashboard.module.css'
 import { useState } from 'react'
 import axios from 'axios'
-import { data } from 'react-router'
 import { validateForm } from '../../ValidateForm'
 const AddOffer = () => {
   const [offer,setOffer]=useState({offerDescription:'',OfferTitle:''})
