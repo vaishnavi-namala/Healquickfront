@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import Dashboard from './Dashboard.module.css'
 import axios from 'axios'
 import {GetApi} from '../../CallApi'
