@@ -7,7 +7,7 @@ const DoctorsLocation = () => {
     const {treatName,location}=useParams()
     const Doctors=GetApi("https://healquickbackend-1.onrender.com/doctor")
     const doctorLocation=Doctors.filter((doctor)=>{
-        return(doctor.location==location && doctor.treatName==treatName)
+        return(doctor.location===location && doctor.treatName===treatName)
     })
   return (<div className={Book.head}>
     <div className={`${Book.treatBanner}`}>
