@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import admin from './admin.module.css'
-import { Link, useNavigate } from 'react-router'
+import {useNavigate } from 'react-router'
 import axios from 'axios'
 import { validateForm } from '../ValidateForm'
 
@@ -20,7 +20,8 @@ const Forgot = () =>{
       
       axios.post("https://healquickbackend-1.onrender.com/reset",{email:email,mobile:mobile})
       .then((res)=>{
-        if(res.data=="does not exist") {throw "does not exist"}
+        if(res.data==="does not exist"){
+      throw new Error("does not exist")};
         else{navigate(`/reset/${email}`)}
       })
       .catch(err=>{
@@ -33,7 +34,8 @@ const Forgot = () =>{
     if(!err()){
     axios.post('https://healquickbackend-1.onrender.com/forgot',{email:email,mobile:mobile})
     .then(res=>{
-      if(res.data=="does not exist") throw "does not exist"
+      if(res.data==="does not exist"){
+      throw new Error("does not exist")}
       alert(res.data)
     })
     .catch(err=>{
