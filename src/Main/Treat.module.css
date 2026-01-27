@@ -6,6 +6,11 @@
   padding: 50px;
   margin: 50px;
 }
+@media (max-width: 600px) {
+  .blogContainer {
+    padding:0px;
+  }
+}
 
 .blogC{
   flex:1 1 calc(25% - 25px);
