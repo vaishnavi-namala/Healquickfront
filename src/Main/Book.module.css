@@ -78,7 +78,8 @@
       padding:0px;
   }
   .sect form{
-      padding:0px;
+      margin:10px;
+      padding:10px;
   }
 }
 .sect input,.sect textarea,.sect select,.contact input,.contact textarea {
