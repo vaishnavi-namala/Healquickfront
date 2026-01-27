@@ -167,6 +167,16 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-out;
 }
+@media (max-width: 1024px) {
+  .blogCard {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .blogCard {
+    width: 100%;
+  }
+}
 
 .blogCard:hover {
   transform: translateY(-10px);
