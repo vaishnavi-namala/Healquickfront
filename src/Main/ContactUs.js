@@ -46,8 +46,8 @@ const ContactUs = () => {
       
     
     <div className={`container-fluid ${Book.contact}`}>
-        <div className="row w-75 m-auto" >
-            <div className={`col-8 pe-3`}>
+        <div className="row" >
+            <div className={`col-lg-8 ${Book.contact1}`}>
             <form  className='shadow p-5'>
                 <input type='text' placeholder='Enter Name' name='contact_name' className='form-control mb-3' value={contact.contact_name} onChange={changedata}/>
                 <pre className=' text-break' id='contact_nameERR'></pre>
@@ -62,7 +62,7 @@ const ContactUs = () => {
             </form>
             </div>
             
-            <div  className={`col-4 shadow ${Book.contact2}`}>
+            <div  className={`col-lg-4 shadow ${Book.contact2}`}>
                 <div>
                     <h1>Address</h1>
                     <p> <i class="bi bi-house-door"></i> 12-11-629/67/2 L.N.Nagar Warasiguda, Secunderabad-500061</p>
