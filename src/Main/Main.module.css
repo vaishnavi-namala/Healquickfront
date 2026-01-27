@@ -21,16 +21,14 @@
 }
 .offer li{
   width:20%;
-  
-
 }
 .fig{
+  padding: 50px 0px;
   height:45vh;
   display: flex;
   flex-wrap: wrap;
 }
 .fig div{
-  padding: 50px 0px 0px 0px;
   width: 50%;
   text-align: center;
 }
@@ -39,6 +37,9 @@
   font-weight: 700;
   color: rgb(3, 109, 108);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.418);
+}
+.content{
+    height:25vh;
 }
 .content p{
   font-size: 24px;
