@@ -68,17 +68,17 @@
     padding: 60px ;
 }
 .sect form{
-    padding: 60px;
+    padding:60px;
     background-color: #cccccc4a;
-    width:50%;
-    margin:auto;
+    width:70%;
+    margin:10px auto;
 }
 @media (max-width: 600px) {
   .sect{
       padding:0px;
   }
   .sect form{
-      width:80%;
+      width:90%;
       padding:10px;
   }
 }
