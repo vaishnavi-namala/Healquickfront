@@ -73,6 +73,14 @@
     width:50%;
     margin:auto;
 }
+@media (max-width: 600px) {
+  .sect{
+      padding:0px;
+  }
+  .sect form{
+      padding:0px;
+  }
+}
 .sect input,.sect textarea,.sect select,.contact input,.contact textarea {
     background-color: transparent;
     border: 1px solid #cbc9c9e6;
