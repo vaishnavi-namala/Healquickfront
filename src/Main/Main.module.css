@@ -176,6 +176,9 @@
   .blogCard {
     width: 100%;
   }
+  .associate{
+      margin:0%;
+  }
 }
 
 .blogCard:hover {
