@@ -48,7 +48,7 @@ const ContactUs = () => {
     <div className={`container-fluid ${Book.contact}`}>
         <div className="row" >
             <div className={`col-lg-8 ${Book.contact1}`}>
-            <form  className='shadow p-5'>
+            <form  className='shadow p-3'>
                 <input type='text' placeholder='Enter Name' name='contact_name' className='form-control mb-3' value={contact.contact_name} onChange={changedata}/>
                 <pre className=' text-break' id='contact_nameERR'></pre>
                 <input type='text' placeholder='Enter Mobile number' name='contact_mobileNo' className='form-control mb-3' value={contact.contact_mobileNo} onChange={changedata}/>
